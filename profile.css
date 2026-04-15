@@ -86,18 +86,18 @@ header {
 .profile .profile__photo {
   display: inline-block;
   border-radius: 100%;
-  width: 400px;
-  height: 400px;
+  width: 20vw;
+  height: 20vw;
   background-color: #F9F6F6;
   position: relative;
-  bottom: 200px;
-  margin-bottom: -200px;
+  bottom: 10vw;
+  margin-bottom: -6%;
 }
 .profile .profile__photo img {
   position: absolute;
   width: 90%;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1vw;
+  right: 1vw;
 }
 .profile .profile__text h2 {
   margin-bottom: 0;
@@ -184,3 +184,136 @@ footer .copyright {
   font-size: 15px;
   color: white;
 }/*# sourceMappingURL=profile.css.map */
+
+
+@media (max-width: 1024px) {
+
+  header {
+    height: 15vh;
+  }
+
+  .good__skill p {
+    width: 75%;
+  }
+
+  .profile .profile__photo {
+    width: 20vh;
+    height: 20vh;
+    bottom: 9vh;
+    margin-bottom: -8%;
+  }
+
+  .profile .profile__photo img {
+    width: 86%;
+    bottom: 7%;
+    right: 7%;
+  }
+
+  .work__experience li, .studying__skill li, .other__skill li {
+  height: 16vh;
+}
+
+  .work__experience ol, .studying__skill ol, .other__skill ol {
+  width: 86%;
+  margin: 3% auto;
+}
+
+  footer {
+    height: 15vh;
+  }
+
+  footer .copyright {
+    font-size: 0.7rem;
+    padding-top: 6rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 0.9em;
+  }
+
+  .work__experience li div:first-of-type, .studying__skill li div:first-of-type, .other__skill li div:first-of-type {
+    margin: auto 3% auto 0;
+  }
+
+  .work__experience li div:nth-of-type(2), .studying__skill li div:nth-of-type(2), .other__skill li div:nth-of-type(2) {
+    width: 80%;
+  }
+
+  .work__experience li, .studying__skill li, .other__skill li {
+    height: 20vh;
+  }
+
+  footer {
+    height: 15vh;
+  }
+
+  footer .copyright {
+    font-size: 0.7rem;
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .profile {
+    margin: 0 auto 6vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .good__skill p {
+    width: 85%;
+  }
+
+  .work__experience ol, .studying__skill ol, .other__skill ol {
+    width: 95%;
+  }
+
+  .work__experience li, .studying__skill li, .other__skill li {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    margin: 5% 0;
+  }
+
+  .work__experience li div:nth-of-type(2) h3, .studying__skill li div:nth-of-type(2) h3, .other__skill li div:nth-of-type(2) h3 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin: 0 auto 2%;
+  }
+
+  .work__experience li div:first-of-type, .studying__skill li div:first-of-type, .other__skill li div:first-of-type {
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .work__experience li div:nth-of-type(2), .studying__skill li div:nth-of-type(2), .other__skill li div:nth-of-type(2) {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+
+}
